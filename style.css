@@ -119,8 +119,8 @@ header {
   }
 
   .card {
-    min-width: 400px;
-    max-height: 100px;
+    widht: 100%;
+    height: auto;
     margin: 0 auto;
   }
 
@@ -314,5 +314,6 @@ header {
     user-select: none;
   }
 }
+
 
 
