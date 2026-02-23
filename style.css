@@ -136,6 +136,7 @@ header {
 
   .card {
     min-width: 350px;
+    min-width: fit-content;
   }
 }
 
@@ -297,6 +298,7 @@ header {
 }
 
 .img__card {
-  width: 100%;
+  width: 200px;
   height: auto;
+
 }
