@@ -253,6 +253,14 @@ header {
     }
 }
 
+
+.img__card {
+  width: 200px;
+  height: auto;
+
+}
+
+
 @media (max-width: 720px) {
     .menu__btn {
         display: flex;
@@ -265,6 +273,16 @@ header {
     .pc{
         display: none;
     }
+
+  .card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .img__card {
+    width: 200px;
+    height: auto;
+  }
 }
 
 
@@ -297,8 +315,4 @@ header {
   }
 }
 
-.img__card {
-  width: 200px;
-  height: auto;
 
-}
