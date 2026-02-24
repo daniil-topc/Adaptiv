@@ -346,10 +346,26 @@ header {
 }
 
 .footer {
-  background-color: antiquewhite;
+  background: linear-gradient(270deg, #001f3f, #003d7a, #003d7a, #001f3f);
+  background-size: 400% 400%;
+  animation: linear-gradient 15s ease infinite;
   text-align: center;
   padding: 20px 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__social a {
+  color: #fff;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.footer__social a:first-child {
+  margin-right: 5px;
+}
+
+.footer__social a:last-child {
+  margin-left: 5px;
 }
 
 .container__footer {
@@ -375,6 +391,7 @@ header {
     max-width: 80px;
   }
 }
+
 
 
 
