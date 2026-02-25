@@ -62,18 +62,46 @@ header {
   font-size: 24px;
 }
 
+btn__container {
+  display: flex;
+  gap: 20px;
+}
+
+.Login, .Register {
+  border: none;
+  padding: 10px 20px;
+  background-color: #49769f;
+  color: #fff;
+  border-radius: 15px;
+  user-select: none;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.Login:hover, .Register:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 8px 12px rgba(73, 118, 159, 0.4));
+}
+
 .nav nav a {
+  position: relative;
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
   color: #fff;
   font-weight: 300;
-  transition: transform 0.3s;
 }
 
-.nav nav a:hover {
-  transform: scale(1.1);
+.nav nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  transform:  translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s;
 }
 
 .catalog__content {
@@ -199,6 +227,19 @@ header {
   .card {
     min-width: 250px;
     min-height: fit-content;
+  }
+
+  .btn__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 95px;
+  }
+
+  .Login, .Register {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -400,7 +441,20 @@ header {
     margin-left: 64px;
     max-width: 80px;
   }
+
+  .btn__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .Login, .Register {
+    width: 100%;
+    text-align: center;
+  }
 }
+
 
 
 
