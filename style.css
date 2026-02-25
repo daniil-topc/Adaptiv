@@ -8,7 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -62,7 +63,7 @@ header {
   font-size: 24px;
 }
 
-btn__container {
+.btn__container {
   display: flex;
   gap: 20px;
 }
@@ -149,6 +150,23 @@ btn__container {
   margin-bottom: 30px;
 }
 
+.footer {
+  background: linear-gradient(270deg, #000814, #001a2e, #001a2e, #000814);
+  background-size: 400% 400%;
+  animation: linear-gradient 15s ease infinite;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  user-select: none;
+  gap: 20px;
+}
 
 .button-wrapper {
   display: flex;
@@ -172,7 +190,7 @@ btn__container {
 }
 
 .button-wrapper button:hover {
-  transform: scaleY(1.1);
+  transform: translateY(-5px);
 }
 
 .price {
@@ -205,8 +223,13 @@ btn__container {
     grid-template-columns: 1fr;
   }
 
+  .img__card {
+    width: 20px;
+    min-height: 80px;
+  }
+
   .card {
-    widht: 100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -223,7 +246,7 @@ btn__container {
 
   .card {
     min-width: 350px;
-    min-width: fit-content;
+    min-height: fit-content;
   }
 }
 
@@ -304,13 +327,13 @@ btn__container {
   display: block;
   padding: 12px 24px;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #cfd8dc;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -329,61 +352,39 @@ btn__container {
   left: 0;
 }
 
-
 @media (width >1120px) {
-    .menu__btn {
-        display: none;
-    }
-    
-    .menu__box {
-        display: none;
-    }
+  .menu__btn {
+    display: none;
+  }
 
-    
+  .menu__box {
+    display: none;
+  }
 }
 
 @media (width <= 1120px) {
-    .menu__btn {
-        display: none;
-    }
-    
-    .menu__box {
-        display: none;
-    }
+  .menu__btn {
+    display: none;
+  }
+
+  .menu__box {
+    display: none;
+  }
 }
-
-
-.img__card {
-  width: 200px;
-  height: auto;
-
-}
-
 
 @media (max-width: 720px) {
-    .menu__btn {
-        display: flex;
-    }
-    
-    .menu__box {
-        display: block;
-    }
-
-    .pc{
-        display: none;
-    }
-
-  .card {
-    width: 100%;
-    height: fit-content;
+  .menu__btn {
+    display: flex;
   }
 
-  .img__card {
-    width: 200px;
-    height: auto;
+  .menu__box {
+    display: block;
+  }
+
+  .pc {
+    display: none;
   }
 }
-
 
 .main {
   flex: 1;
@@ -457,6 +458,11 @@ btn__container {
     width: 100%;
     text-align: center;
   }
+}
+
+.img__card {
+  width: 200px;
+  height: auto;
 }
 
 
