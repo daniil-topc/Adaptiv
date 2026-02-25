@@ -460,10 +460,23 @@ header {
   }
 }
 
+@media (max-width: 400px) {
+  .btn__container {
+    margin-left: 95px;
+    margin-top: 15px;
+  }
+   
+  .Login, .Register {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .img__card {
   width: 200px;
   height: auto;
 }
+
 
 
 
