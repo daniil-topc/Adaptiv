@@ -104,6 +104,10 @@ btn__container {
   transition: width 0.3s;
 }
 
+.nav nav a:hover::after {
+  width: 100%;
+}
+
 .catalog__content {
   display: flex;
   flex-direction: column;
@@ -454,6 +458,7 @@ btn__container {
     text-align: center;
   }
 }
+
 
 
 
